@@ -1,0 +1,36 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+F1::ExitApp ; кнопка выхода
+F2::
+Reload
+return
+F4:: ; кнопка активации
+Loop ; цикл
+{
+        sleep 150
+        PixelGetColor, color, 300, 73 ; пиксель по screen, а не клиенту
+        if (color = 0xFFFFFF)
+        {
+        send {Space}
+        }
+		Sleep 1000
+		Send {W Down}
+		Sleep 1000
+		Send {W Up}
+		Sleep 1000
+		Send {A Down}
+		Sleep 1000
+		Send {A Up}
+		Sleep 1000
+		Send {S Down}
+		Sleep 1000
+		Send {S Up}
+		Sleep 1000
+		Send {D Down}
+		Sleep 1000
+		Send {D Up}
+		sleep 5000
+}
+return

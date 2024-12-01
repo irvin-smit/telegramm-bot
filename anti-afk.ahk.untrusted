@@ -1,0 +1,54 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+F5::ExitApp ; кнопка выхода
+F6::
+Reload
+return
+F7:: ; кнопка активации
+Loop ; цикл
+{
+Sleep 5000
+Click 70, 1060 ; win1
+Sleep 5000
+Click 900, 575 ; center
+Sleep 5000
+Click 120, 1060 ; win2
+Sleep 5000
+Click 900, 575 ; center
+Sleep 5000
+Click 170, 1060 ; win3
+Sleep 5000
+Click 900, 575 ; center
+Sleep 5000
+Click 220, 1060 ; win4
+Sleep 5000
+Click 900, 575 ; center
+Sleep 5000
+Click 270, 1060 ; win5
+Sleep 5000
+Click 900, 575 ; center
+Sleep 5000
+Click 320, 1060 ; win6
+Sleep 5000
+Click 900, 575 ; center
+Sleep 5000
+Click 370, 1060 ; win7
+Sleep 5000
+Click 900, 575 ; center
+Sleep 5000
+Click 420, 1060 ; win8
+Sleep 5000
+Click 900, 575 ; center
+Sleep 5000
+Click 470, 1060 ; win9
+Sleep 5000
+Click 900, 575 ; center
+Sleep 5000
+Click 520, 1060 ; win10
+Sleep 5000
+Click 900, 575 ; center
+Sleep 5000
+}
+return
